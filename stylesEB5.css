@@ -1,0 +1,443 @@
+/*** Global Styles ***/
+.padding-10 {
+    padding: 10% 0;
+}
+
+.visa-btn {
+    padding: 5px 10px;
+    font-size: 12px;
+}
+
+.pulse {
+    animation: pulse-animation 2s infinite;
+}
+
+@keyframes pulse-animation {
+    0% {
+        box-shadow: 0 0 0 0px rgba(196, 196, 196, 0.40);
+    }
+
+    50% {
+        box-shadow: 0 0 0 0px rgba(196, 196, 196, 0.50);
+    }
+
+    100% {
+        box-shadow: 0 0 0 10px rgba(196, 196, 196, 0.60);
+    }
+}
+
+
+.form-control:focus {
+    border-color: none !important;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgba(61, 61, 61, 0.25) !important;
+}
+
+span.xbold {
+    font-weight: 800;
+}
+
+/****** EB5 Landing Styles******/
+div.eb5-intro-bkg {
+    background: url(../assets/images/location-black-bkg.png);
+    height: 100%;
+    background-size: cover;
+    overflow: hidden;
+    display: flex;
+}
+
+/*** Section 1 ***/
+
+/***  EB5 Mohawk Title Coloum ***/
+.intro-title-eb5 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    line-height: 1.8em;
+}
+
+li.intro {
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    font-weight: 300 !important;
+    line-height: 1.6em;
+}
+
+/* EB-5 Contact Form Column */
+.form-white {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 75px 50px;
+}
+
+/* Contact Form */
+.col-form {
+    padding: 5% 5% !important;
+}
+
+form {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700 !important;
+    color: #333;
+}
+
+.form-control {
+    background-color: #E9E9E9 !important;
+}
+
+.form-floating {
+    font-weight: 600;
+    color: #656565 !important;
+}
+
+input {
+    font-weight: 900;
+}
+
+
+.form-title-eb5 {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+/*** Section 2 ***/
+h2.section2-subtitle {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    color: #333;
+}
+
+/*** Section 3 - Timeline ***/
+section#timeline {
+    background-color: #F1F1F1;
+    padding: 100px 0;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline {
+    position: relative;
+    margin: 0 auto;
+    width: 60%;
+}
+
+.timeline-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #000;
+}
+
+.timeline-estimated {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #797979;
+}
+
+.estimated-middle {
+    padding-top: 50px !important;
+}
+
+p.paragraph-linea {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    color: #333;
+    line-height: 1.2em;
+}
+
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 2px;
+    background-color: #000;
+    top: 0;
+    bottom: 50px;
+    left: 0%;
+}
+
+/* Container around content */
+.timeline-container {
+    padding: 0px 0px 50px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 100%;
+}
+
+/* Ajustes para los círculos */
+.timeline-container:nth-child(1)::after {
+    content: '1';
+}
+
+.timeline-container:nth-child(2)::after {
+    content: '2';
+}
+
+.timeline-container:nth-child(3)::after {
+    content: '3';
+    background-color: #71907A;
+    color: #fff;
+}
+
+.timeline-container:nth-child(4)::after {
+    content: '4';
+}
+
+.timeline-container:nth-child(5)::after {
+    content: '5';
+}
+
+/* The circles on the timeline */
+.timeline-container::after {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    right: -14px;
+    background-color: #D9D9D9;
+    top: 0px;
+    border-radius: 50%;
+    z-index: 1;
+    font-size: 24px;
+    font-weight: 500;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2px;
+}
+
+
+/* Place the container to the left */
+.left {
+    left: 0;
+    text-align: end;
+}
+
+/* Place the container to the right */
+.right {
+    left: 0%;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+    left: -24px;
+}
+
+.left::after {
+    right: -16px !important;
+}
+
+/* The actual content */
+.timeline-content {
+    background-color: transparent;
+    position: relative;
+    border-radius: 6px;
+}
+
+/*** Section 4 - Estatus Migratorio ***/
+.bkg-estatus {
+    background: url(../assets/images/location-black-bkg.png);
+    height: 50vh;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+
+.paragraph-big {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    width: 75%;
+    margin: auto;
+}
+
+.disclaimer {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/*** Section 5 - FAQ ***/
+#accordionEB5Faq .accordion-container {
+    padding: 20px 0;
+    border: solid #333;
+    border-width: 1px 0 0 0;
+}
+
+
+#accordionEB5Faq .accordion-button {
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: 20px !important;
+    font-weight: 600 !important;
+    background-color: #fff !important;
+    color: #333 !important;
+}
+
+#accordionEB5Faq .accordion-button::after {
+    flex-shrink: 0;
+    width: var(--bs-accordion-btn-icon-width);
+    height: var(--bs-accordion-btn-icon-width);
+    margin-left: auto;
+    content: "";
+    background-image: var(--bs-accordion-btn-icon);
+    background-repeat: no-repeat;
+    background-size: var(--bs-accordion-btn-icon-width);
+    transition: var(--bs-accordion-btn-icon-transition);
+}
+
+#accordionEB5Faq .accordion-button:not(.collapsed)::after {
+    background-image: var(--bs-accordion-btn-active-icon) !important;
+    transform: var(--bs-accordion-btn-icon-transform) !important;
+}
+
+#accordionEB5Faq .accordion-body {
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: 14px;
+    color: #565656;
+    font-weight: 600;
+    background-color: #fff !important;
+    border: solid 1px rgba(255, 255, 255, 0.2) !important;
+    padding: 15px 0 0 0;
+}
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 767px) {
+
+    .visa-btn {
+        padding: 5px 10px;
+        font-size: 10px;
+    }
+
+    li.intro {
+        font-size: 14px;
+    }
+
+    .timeline {
+        width: 100%;
+    }
+
+    .estimated-middle {}
+
+    /* Place the timelime to the left */
+    .timeline::after {
+        left: 31px;
+    }
+
+    /* Full-width containers */
+    .timeline-container {
+        width: 100%;
+        padding-left: 70px;
+    }
+
+    /* Make sure that all arrows are pointing leftwards */
+    .timeline-container::before {
+        left: 60px;
+        border: medium solid white;
+        border-width: 10px 10px 10px 0;
+        border-color: transparent white transparent transparent;
+    }
+
+    /* Make sure all circles are at the same spot */
+    .left::after,
+    .right::after {
+        left: 6px;
+    }
+
+    /* Make all right containers behave like the left ones */
+    .right {
+        left: 0%;
+    }
+
+    .left {
+        text-align: start;
+    }
+}
+
+
+
+@media (max-width: 1200px) {
+    .padding-10 {
+        padding: 25% 0;
+    }
+
+    /*** Section 1 ***/
+    div.eb5-intro-bkg {
+        background: url(../assets/images/location-black-bkg.png);
+        height: 100%;
+        background-size: cover;
+        overflow: hidden;
+        display: flex;
+    }
+
+    /***  EB5 Mohawk Title Coloum ***/
+    .intro-title-eb5 {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 20px;
+        font-weight: 600;
+        letter-spacing: 0px;
+        line-height: 1.6em;
+    }
+
+    /* EB-5 Contact Form Column */
+    .form-white {
+        background-color: #fff;
+        border-radius: 8px;
+        padding: 25px 25px;
+    }
+
+    .form-title-eb5 {
+        font-size: 18px;
+    }
+
+    /*** Section 2 ***/
+    h2.section2-subtitle {
+        font-size: 20px;
+    }
+
+    /*** Section 3 ***/
+    .timeline-title {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 16px;
+        font-weight: 600;
+        text-transform: uppercase;
+        color: #000;
+    }
+
+    .timeline-estimated {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 14px;
+        font-weight: 600;
+        color: #797979;
+    }
+
+    p.paragraph-linea {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        color: #333;
+        line-height: 1.2em;
+    }
+
+    /*** Section 4 ***/
+    .paragraph-big {
+        font-size: 14px;
+        width: 100%;
+    }
+
+    /*** Section 5 ***/
+    .bkg-estatus {
+        height: 100%;
+        padding: 75px 0;
+    }
+    #accordionEB5Faq .accordion-button {
+        font-size: 16px !important;
+    }
+
+}
